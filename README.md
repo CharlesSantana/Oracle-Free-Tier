@@ -15,9 +15,13 @@ bash <(wget -qO- https://raw.githubusercontent.com/leitura/senharoot/main/senhar
 ABRIR PORTAS SERVER ORACLE:
 
 sudo apt-get update
-sudo apt install firewalld 
+
+sudo apt install firewalld
+
 sudo firewall-cmd --zone=public --permanent --add-port=22/tcp 
-sudo firewall-cmd --reload 
+
+sudo firewall-cmd --reload
+
 sudo firewall-cmd --zone=public --list-ports
 
 
